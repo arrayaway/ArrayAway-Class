@@ -1,0 +1,12 @@
+ h1 {
+		color: blue;
+		background-color: black;
+		text-style: underline;
+		font-weight: bold;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		text-align: center;
+ }
+ 

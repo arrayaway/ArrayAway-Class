@@ -1,0 +1,32 @@
+ h1.special {
+		color: blue;
+		background-color: black;
+		text-style: underline;
+		font-weight: bold;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		text-align: center;
+ }
+ 
+ #blocky {
+	 display: block;
+	 font-size: 40px;
+ }
+ 
+ div {
+	 display: block;
+ }
+ 
+ .bg-purple {
+	 background-color: purple;
+ }
+ 
+ .white {
+	 color: white;
+ }
+ 
+ .padded {
+	 padding: 40px;
+ }
