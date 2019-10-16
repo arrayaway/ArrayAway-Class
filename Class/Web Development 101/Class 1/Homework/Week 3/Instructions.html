@@ -30,17 +30,126 @@
 					<div class="card-body">
 						<h4>Login Page Homework</h4>
 						<div class="alert alert-info">
-							<strong>Part 1:</strong> Add a button element to MainFile.html with label "Login".
+							<strong>For this assignment, you will make the login page for your social media
+								website! The objective is to make a Login.html page that looks as close to the login
+								below as possible. There are steps below the image to get you started.</strong>
+						</div>
+						<img class="img-fluid" src="loginpage.png" />
+						<div class="alert alert-info">
+							<strong>Part 1:</strong> In a folder you can find later, create two files:
+							<ul>
+								<li>html file called login.html</li>
+								<li>css file called main.css</li>
+							</ul>
 						</div>
 						<div class="alert alert-info">
-							<strong>Part 2:</strong> Add the bootstrap class btn to the button to make it a BootStrap
-							button.
+							<strong>Part 2:</strong> Add the base html code to login.html. (IE the doctype, the html
+							element, the head, and the
+							body)
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 3:</strong> Include your main.css reference and bootstrap by adding the
+							bootstrap references inside the head element (refer to previous homework assignments).
 						</div>
 						<div class="alert alert-warning">
-							<strong>Note:</strong> Main.html is already referencing BootStrap in the head element.
+							<strong>Note:</strong> the background color of the login page in the image appears to be a
+							light blue.
 						</div>
 						<div class="alert alert-info">
-							<strong>Part 3:</strong> Make the button a "primary" button.
+							<strong>Part 3:</strong> In main.css set the body's background to some sort of light blue.
+							Perhaps #e9faff?
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 4:</strong> Create the white box containing the login form class:
+							<ol>
+								<li>
+									Create a new css class in the main.css file to add the container styles to. Name it
+									"login-container".
+								</li>
+								<li>
+									Make the class have a height of 400px.
+								</li>
+								<li>
+									Make the class have a background color of white.
+								</li>
+								<li>
+									Make the edges of the container class rounded by modifying the border-radius
+									property.
+								</li>
+								<li>
+									Looks like all of the text is centered, so make the class center its text with
+									text-align: center.
+								</li>
+								<li>
+									Add a shadow effect using the box-shadow property.
+								</li>
+							</ol>
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 5:</strong> In the body of login.html, add a div with the class "container".
+							Then inside this div add a div with the class of "row". Then
+							inside this div, add another div with 2 classes: col-md-6 and the class we just created:
+							"login-container".
+						</div>
+						<div class="alert alert-warning">
+							<strong>Note:</strong> if you look at your login.html page in a browser, you should see that
+							your white container is off to the left rather than in the center. Let's fix that.
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 6:</strong> Add another class, "offset-md-3", to the div element that already
+							has the two
+							classes "col-md-6 login-container". Add the class before the other two inside the quotes.
+						</div>
+						<div class="alert alert-warning">
+							<strong>Note:</strong> if you look at your login.html page in a browser, you should see that
+							your white container is also very close to the top of the page.
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 6:</strong> Modify the login-container class in main.css so that it sets the
+							margin-top to 40px.
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 7:</strong> Inside the login-container div in login.html, add an h2 element
+							with the text "Account Login".
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 8:</strong> After the h2 element, add a form element that contains 2 inputs and
+							a button:
+							<ol>
+								<li>
+									An input of type text.
+								</li>
+								<li>
+									An input of type password.
+								</li>
+								<li>
+									A button of type submit.
+								</li>
+							</ol>
+							Refer to <a
+								href="https://getbootstrap.com/docs/4.0/components/forms/">https://getbootstrap.com/docs/4.0/components/forms/?</a>
+							to make the inputs bootstrapped styled. <br />
+							Refer to <a
+								href="https://getbootstrap.com/docs/4.0/components/buttons/">https://getbootstrap.com/docs/4.0/components/buttons/</a>
+							to make the button bootstrapped styled. Look into large buttons and block level buttons.
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 9:</strong> finally after the form, use p, a and br tags to add the last bit
+							of content as seen in the image.
+						</div>
+						<div class="alert alert-warning">
+							<strong>Note:</strong> if you look at your login.html page in a browser, you should see that
+							the content in your white container is really close to the edges. Let's fix that.
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 10:</strong> In main.css, modify the login-container class so that it has a
+							padding of 50px.
+						</div>
+						<div class="alert alert-success">
+							<strong>Bonus:</strong>
+							Now that you have a good base login page, let your creative juices flow and style the page
+							as your own. Change the background-color, make the background an image, add more, make it
+							darker, do whatever you want to make the page more your style!
 						</div>
 						<h5>References for Help</h5>
 						<table class="table table-light table-striped">
@@ -51,11 +160,6 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td>Button Element</td>
-									<td><a href="https://www.w3schools.com/tags/tag_button.asp"
-											target="_blank">https://www.w3schools.com/tags/tag_button.asp</a></td>
-								</tr>
 								<tr>
 									<td>BootStrap Getting Started</td>
 									<td><a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/"
@@ -68,114 +172,52 @@
 											target="_blank">https://getbootstrap.com/docs/4.0/components/buttons/</a>
 									</td>
 								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-12 padded">
-				<div class="card">
-					<div class="card-body">
-						<h4>BootStrap Inputs Homework</h4>
-						<div class="alert alert-info">
-							<strong>Part 1:</strong> Add input elements to MainFile.html.
-							<ul>
-								<li>
-									Add an input element with a type of text.
-									<ul>
-										<li>
-											Make the placeholder equal to "Username"
-										</li>
-									</ul>
-								</li>
-								<li>
-									Add an input element with a type of password.
-									<ul>
-										<li>
-											Make the placeholder equal to "Password"
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<div class="alert alert-info">
-							<strong>Part 2:</strong> Add the bootstrap class form-control to both inputs to make them
-							BootStrap inputs.
-						</div>
-						<h5>References for Help</h5>
-						<table class="table table-light table-striped">
-							<thead>
 								<tr>
-									<th>Topic</th>
-									<th>Reference</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>HTML Inputs</td>
-									<td><a href="https://www.w3schools.com/tags/tag_input.asp"
-											target="_blank">https://www.w3schools.com/tags/tag_input.asp</a></td>
-								</tr>
-								<tr>
-									<td>placeholder attribute for inputs</td>
-									<td><a href="https://www.w3schools.com/tags/att_placeholder.asp"
-											target="_blank">https://www.w3schools.com/tags/att_placeholder.asp</a></td>
-								</tr>
-								<tr>
-									<td>BootStrap Inputs</td>
-									<td><a href="https://www.w3schools.com/bootstrap4/bootstrap_forms_inputs.asp"
-											target="_blank">https://www.w3schools.com/bootstrap4/bootstrap_forms_inputs.asp</a>
+									<td>BootStrap Forms</td>
+									<td><a href="https://getbootstrap.com/docs/4.0/components/forms/?"
+											target="_blank">https://getbootstrap.com/docs/4.0/components/forms/?</a>
 									</td>
 								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-12 padded">
-				<div class="card">
-					<div class="card-body">
-						<h4>BootStrap Grid Homework</h4>
-						<div class="alert alert-info">
-							<strong>Part 1:</strong> In GridHomework.html, notice there are 4 rows, each having
-							different amounts of columns.
-						</div>
-						<div class="alert alert-warning">
-							<strong>Note:</strong> Make sure your browser is sized large or else there will be many
-							more rows and fewer columns in them than what this describes.
-						</div>
-						<div class="alert alert-info">
-							<strong>Part 2:</strong> In the first row, make the first column have a background color of
-							blue instead
-							of violet by removing the bg-violet class and replacing it with bg-blue.
-						</div>
-						<div class="alert alert-info">
-							<strong>Part 3:</strong> Add another row of columns to the end of the current rows, with
-							just one 12 wide column div
-							with the background color being red by including the bg-red class in the div.
-						</div>
-						<div class="alert alert-success">
-							<strong>Bonus:</strong> Inside the first row 2nd column element, add 3 rows such that the
-							first row
-							has 1 full width column, the second row has 4 equal width columns to make up the full width,
-							and the
-							third row has two non-equal width columns. Use various bg- classes provided in main.css to
-							make your
-							div elements visible.
-						</div>
-						<h5>References for Help</h5>
-						<table class="table table-light table-striped">
-							<thead>
 								<tr>
-									<th>Topic</th>
-									<th>Reference</th>
+									<td>Rounded Edges</td>
+									<td><a href="https://www.w3schools.com/cssref/css3_pr_border-radius.asp"
+											target="_blank">https://www.w3schools.com/cssref/css3_pr_border-radius.asp</a>
+									</td>
 								</tr>
-							</thead>
-							<tbody>
 								<tr>
-									<td>BootStrap Grids</td>
-									<td><a href="https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp"
-											target="_blank">https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp</a>
+									<td>Text-Align</td>
+									<td><a href="https://www.w3schools.com/cssref/pr_text_text-align.asp"
+											target="_blank">https://www.w3schools.com/cssref/pr_text_text-align.asp</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Box-Shadow</td>
+									<td><a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.asp"
+											target="_blank">https://www.w3schools.com/cssref/css3_pr_box-shadow.asp</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Padding</td>
+									<td><a href="https://www.w3schools.com/css/css_padding.asp"
+											target="_blank">https://www.w3schools.com/css/css_padding.asp</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Margin</td>
+									<td><a href="https://www.w3schools.com/css/css_margin.asp"
+											target="_blank">https://www.w3schools.com/css/css_margin.asp</a>
+									</td>
+								</tr>
+								<tr>
+									<td>HTML Forms</td>
+									<td><a href="https://www.w3schools.com/html/html_forms.asp"
+											target="_blank">https://www.w3schools.com/html/html_forms.asp</a>
+									</td>
+								</tr>
+								<tr>
+									<td>BootStrap Forms</td>
+									<td><a href="https://getbootstrap.com/docs/4.0/components/forms/"
+											target="_blank">https://getbootstrap.com/docs/4.0/components/forms/</a>
 									</td>
 								</tr>
 							</tbody>
@@ -183,7 +225,7 @@
 					</div>
 				</div>
 				<div class="alert alert-success">
-					<strong>All Done!</strong> Make sure to either Zip up Main.html, GridHomework.html, and main.css and
+					<strong>All Done!</strong> Make sure to either Zip up Login.html and main.css and
 					email it to Sean at arrayaway@gmail.com or send your code to Sean on Slack at
 					<a href="https://array-away.slack.com" target="_blank">https://array-away.slack.com</a>
 				</div>
