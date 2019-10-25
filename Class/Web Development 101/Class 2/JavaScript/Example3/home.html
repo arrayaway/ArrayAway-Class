@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var clickCount = 0;
+
+        function ChangeColor() {
+            clickCount++;
+            var mod = clickCount % 3;
+            var body = document.getElementById("theBody");
+
+            if (mod == 0) {
+                body.style.backgroundColor = "red";
+            }
+            else if (mod == 1) {
+                body.style.backgroundColor = "blue";
+            }
+            else {
+                body.style.backgroundColor = "white";
+            }
+        }
+
+
+        if (true || false) {
+            alert("Cookies!");
+        }
+
+    </script>
+</head>
+
+<body id="theBody">
+    <button onclick="ChangeColor()">Click Me</button>
+</body>
+
+</html>

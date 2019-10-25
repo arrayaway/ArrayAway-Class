@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+        function getPos(e) {
+            x = e.clientX;
+            y = e.clientY;
+            cursor = "Your Mouse Position Is : " + x + " and " + y;
+            document.getElementById("displayArea").innerHTML = cursor
+            document.getElementById("focusArea").style.backgroundColor =
+                "rgba(" + (x + y) / 2 + "," + x + "," + y + ")";
+        }
+
+        function stopTracking() {
+            document.getElementById("displayArea").innerHTML = "";
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="focusArea" onmousemove="getPos(event)" onmouseout="stopTracking()"
+        style="height: 255px; width: 255px; border: 2px solid black;">
+    </div>
+    <h1 id="displayArea"></h1>
+</body>
+
+</html>
