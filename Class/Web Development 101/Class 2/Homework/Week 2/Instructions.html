@@ -4,9 +4,7 @@
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-		crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 		crossorigin="anonymous"></script>
@@ -28,47 +26,69 @@
 			<div class="col-lg-12 padded">
 				<div class="alert alert-info">
 					<strong>
-						For this assignment, you will complete various basic javasscript tasks to get your
-						javascript skills rolling.
+						For this assignment, you will complete some JS tasks to get you accustomed to 
+						variable scopes and some JQuery tasks.
 					</strong>
 				</div>
 				<div class="card">
 					<div class="card-body">
 						<h4>1. Simple Output</h4>
 						<div class="alert alert-info">
-							<strong>Part 1:</strong> In a folder you can find later, create two files:
+							<strong>Part 1:</strong> Notice there are two files provided for part1:
 							<ul>
 								<li>html file called part1.html</li>
-								<li>javascript file called part1script.js</li>
+								<li>javascript file called part1scripts.js</li>
+							</ul>
+							<strong>These files have the first bit of code to get started.</strong>
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 2:</strong> Create 3 new functions in part1scripts.js:
+							<ul>
+								<li>harvestApples()</li>
+								<li>harvestOranges()</li>
+								<li>harvestBananas()</li>
 							</ul>
 						</div>
 						<div class="alert alert-info">
-							<strong>Part 2:</strong> Add the base html code to part1.html. (IE the doctype, the html
-							element, the head, and the body)
+							<strong>Part 3:</strong> Make harvestApples() simply add the following string
+							to the inner HTML of the body in part1.html: numberOfFruit + " apples harvested! &lt;&#47;br>"
 						</div>
 						<div class="alert alert-info">
-							<strong>Part 3:</strong> Include your part1script.js reference with the script tag with a
-							source of "part1script.js".
+							<strong>Part 4:</strong> Make harvestOranges() declare its own numberOfFruit variable set equal to 
+							3, with var numberOfFruit = 3;
 						</div>
 						<div class="alert alert-info">
-							<strong>Part 4:</strong> In part1script.js use alert() to make an alert box appear on your
-							page that says anything you want it to.
-						</div>
-						<div class="alert alert-warning">
-							<strong>Note:</strong> remember to pass in your value to be alerted as a string using double
-							quotes like "MY MESSAGE"
+							<strong>Part 5:</strong> After declaring the new numberOfFruit variable make harvestOranges() 
+							add the following string
+							to the inner HTML of the body in part1.html: numberOfFruit + " oranges harvested! &lt;&#47;br>"
 						</div>
 						<div class="alert alert-info">
-							<strong>Part 5:</strong> In part1script.js use console.log() to write something out to the
-							browser's console.
+							<strong>Part 6:</strong> Make harvestBananas() modify the global numberOfFruit variable equal to 
+							0, with numberOfFruit = 3;
 						</div>
 						<div class="alert alert-info">
-							<strong>Part 6:</strong> In part1script.js use document.write() to write anything to the
-							page.
+							<strong>Part 7:</strong> After modifying the numberOfFruit variable make harvestBananas() 
+							add the following string
+							to the inner HTML of the body in part1.html: numberOfFruit + " bananas harvested! &lt;&#47;br>"
 						</div>
-						<div class="alert alert-warning">
-							<strong>Note:</strong> all that is required in this part of the homework was done in the
-							slides. Review the slides if you are having any issues. ^_^
+						<div class="alert alert-info">
+							<strong>Part 8:</strong> call your functions in this order in part1scripts.js after the 
+							functions have been created in the code: 
+							<ol>
+								<li>harvestApples()</li>
+								<li>harvestOranges()</li>
+								<li>harvestBananas()</li>
+								<li>harvestApples()</li>
+								<li>harvestOranges()</li>
+								<li>harvestBananas()</li>
+							</ol>
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 9:</strong> Notice that you called your functions each twice and in the same pattern: 
+							apples, oranges, bananas, apples, oranges, and bananas. Add a paragraph element to the body in 
+							part1.html explain why the second call on harvestApples has a different number than the first call,
+							even though harvestApples never modifies the numberOfFruit. See scopes: 
+							<a href="https://www.w3schools.com/js/js_scope.asp" target="_blank">https://www.w3schools.com/js/js_scope.asp</a>
 						</div>
 
 						<h5>References for Help</h5>
@@ -81,31 +101,10 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>Referencing a JavaScript file</td>
+									<td>JavaScript Scopes</td>
 									<td>
-										<a href="https://www.w3schools.com/tags/att_script_src.asp"
-											target="_blank">https://www.w3schools.com/tags/att_script_src.asp</a>
-									</td>
-								</tr>
-								<tr>
-									<td>JavaScript alert()</td>
-									<td>
-										<a href="https://www.w3schools.com/tags/att_script_src.asp"
-											target="_blank">https://www.w3schools.com/tags/att_script_src.asp</a>
-									</td>
-								</tr>
-								<tr>
-									<td>JavaScript console.log()</td>
-									<td>
-										<a href="https://www.w3schools.com/jsref/met_console_log.asp"
-											target="_blank">https://www.w3schools.com/jsref/met_console_log.asp</a>
-									</td>
-								</tr>
-								<tr>
-									<td>JavaScript document.write()</td>
-									<td>
-										<a href="https://www.w3schools.com/jsref/met_doc_write.asp"
-											target="_blank">https://www.w3schools.com/jsref/met_doc_write.asp</a>
+										<a href="https://www.w3schools.com/js/js_scope.asp"
+											target="_blank">https://www.w3schools.com/js/js_scope.asp</a>
 									</td>
 								</tr>
 							</tbody>
@@ -115,56 +114,37 @@
 				<br />
 				<div class="card">
 					<div class="card-body">
-						<h4>2. HTML Manipulation After OnClick Event</h4>
+						<h4>2. JQuery</h4>
 						<div class="alert alert-info">
-							<strong>Part 1:</strong> Before moving forward, we did not get to javascript events during
-							class, so you will need to research them yourself right quick. The following would be great
-							resources if you have not worked with events in javascript before:
-							<ul>
-								<li>https://www.w3schools.com/js/js_events.asp</li>
-								<li>The events portion of the slides of class that we didn't get to.</li>
-							</ul>
+							<strong>Part 1:</strong> Make sure to familiarize yourself with JQuery a little 
+							bit before attempting the next parts. W3Schools is excellent for this:
+							<a href="https://www.w3schools.com/jquery/default.asp"
+								target="_blank">https://www.w3schools.com/jquery/default.asp</a>
 						</div>
 						<div class="alert alert-info">
-							<strong>Part 2:</strong> In a folder you can find later, create two files:
-							<ul>
-								<li>html file called part2.html</li>
-								<li>javascript file called part2script.js</li>
-							</ul>
+							<strong>Part 2:</strong> Notice a file part2scripts.js has been created already, and this 
+							file Instructions.html references that javascript file. Adding javascript to that file 
+							then will affect this page, which is what we want. ^_^
 						</div>
 						<div class="alert alert-info">
-							<strong>Part 3:</strong> Add the base html code to part2.html. (IE the doctype, the html
-							element, the head, and the body)
+							<strong>Part 3:</strong> In part2scripts.js add the JQuery document ready
+							event: $(document).ready(function() {});
 						</div>
 						<div class="alert alert-info">
-							<strong>Part 4:</strong> Include your part2script.js reference with the script tag with a
-							source of "part2script.js".
+							<strong>Part 4:</strong> Inside the document ready function, use a JQuery selector
+							to reference all of the elements in this page that have a class of "alert".
 						</div>
 						<div class="alert alert-info">
-							<strong>Part 5:</strong> Add 3 html buttons to the body of part2.html.
+							<strong>Part 5:</strong> Add a click event to every one of the elements with a class of 
+							"alert" that fades out the element that was clicked.
+						</div>
+						<div class="alert alert-warning">
+							<strong>Note:</strong> Use $(this) inside the click event
+							function to reference the element that was clicked. 
 						</div>
 						<div class="alert alert-info">
-							<strong>Part 6:</strong> Make it where when the first button is clicked, an alert box
-							appears saying "YOU CLICKED ME AHHHHHH".
-						</div>
-						<div class="alert alert-info">
-							<strong>Part 7:</strong> In part2scripts.js, add a javascript function called "myFunction"
-							that uses
-							document.getElementById() to get a reference to your body element in part2.html (you need to
-							add an id to the body element).
-						</div>
-						<div class="alert alert-info">
-							<strong>Part 8:</strong> In the function myFunction, make it append a new button to the body
-							element using .innerHTML += button stuff. Like what was covered in class. refer to the
-							slides if needed.
-						</div>
-						<div class="alert alert-info">
-							<strong>Part 9:</strong> In part2.html, make the onclick for the second button call our
-							function myFunction.
-						</div>
-						<div class="alert alert-primary">
-							<strong>BONUS:</strong> In part2.html, make the onclick for the third button click the other
-							two buttons.
+							<strong>Part 6:</strong> Click here and make this step fade out. CLICK ALL THE STEPS. make em all 
+							disappear :O. 
 						</div>
 
 						<h5>References for Help</h5>
@@ -177,68 +157,42 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>JavaScript Functions</td>
+									<td>JQuery Start</td>
 									<td>
-										<a href="https://www.w3schools.com/js/js_functions.asp"
-											target="_blank">https://www.w3schools.com/js/js_functions.asp</a>
+										<a href="https://www.w3schools.com/jquery/jquery_get_started.asp"
+											target="_blank">https://www.w3schools.com/jquery/jquery_get_started.asp</a>
 									</td>
 								</tr>
 								<tr>
-									<td>JavaScript innerHTML</td>
+									<td>Syntax and document ready event</td>
 									<td>
-										<a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp"
-											target="_blank">https://www.w3schools.com/jsref/prop_html_innerhtml.asp</a>
+										<a href="https://www.w3schools.com/jquery/jquery_syntax.asp"
+											target="_blank">https://www.w3schools.com/jquery/jquery_syntax.asp</a>
 									</td>
 								</tr>
 								<tr>
-									<td>JavaScript +=</td>
+									<td>JQuery Selectors</td>
 									<td>
-										<a href="https://www.w3schools.com/js/js_operators.asp"
-											target="_blank">https://www.w3schools.com/js/js_operators.asp</a>
+										<a href="https://www.w3schools.com/jquery/jquery_selectors.asp"
+											target="_blank">https://www.w3schools.com/jquery/jquery_selectors.asp</a>
 									</td>
 								</tr>
 								<tr>
-									<td>JavaScript getElementById</td>
+									<td>JQuery click event</td>
 									<td>
-										<a href="https://www.w3schools.com/jsref/met_document_getelementbyid.asp"
-											target="_blank">https://www.w3schools.com/jsref/met_document_getelementbyid.asp</a>
+										<a href="https://www.w3schools.com/jquery/jquery_events.asp"
+											target="_blank">https://www.w3schools.com/jquery/jquery_events.asp</a>
 									</td>
 								</tr>
 								<tr>
-									<td>Events</td>
+									<td>JQuery Fade</td>
 									<td>
-										<a href="https://www.w3schools.com/js/js_events.asp"
-											target="_blank">https://www.w3schools.com/js/js_events.asp</a>
+										<a href="https://www.w3schools.com/jquery/jquery_fade.asp"
+											target="_blank">https://www.w3schools.com/jquery/jquery_fade.asp</a>
 									</td>
 								</tr>
 							</tbody>
 						</table>
-					</div>
-				</div>
-				<br />
-				<div class="card">
-					<div class="card-body">
-						<h4>(Much much harder) <u>BONUS</u> Homework</h4>
-						<div class="alert alert-primary">
-							<strong>Part 1:</strong> In a folder you can find later, create an html file and a
-							javascript file and link them via referencing.
-						</div>
-						<div class="alert alert-primary">
-							<strong>Part 2:</strong> Use recursion to calculate and output the first 20 fibonacci
-							numbers.
-						</div>
-						<div class="alert alert-primary">
-							<strong>Part 3:</strong> Use iteration to calculate and output the first 20 fibonacci
-							numbers.
-						</div>
-						<div class="alert alert-primary">
-							<strong>Part 4:</strong> Use the faster of the two fibonacci methods to instead of just
-							outputting the first 20 numbers, output colored div boxes that lay on top of each other by
-							increasing their z-index and
-							whose size, background color, and position are directly related to their fib number. This
-							will create golden ratio spiral. You don't need to go all the way up to 20 divs. Find what
-							looks the coolest to you.
-						</div>
 					</div>
 				</div>
 				<br />
@@ -254,6 +208,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="part2scripts.js"></script> 
 </body>
 
 </html>
