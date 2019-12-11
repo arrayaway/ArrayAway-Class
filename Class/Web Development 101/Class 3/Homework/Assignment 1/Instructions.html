@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="Instructions.css" />
+	<title>PHP Homework 1</title>
+</head>
+
+<body class="bg-purple">
+	<div class="container bg-light rounded bottom-margin-heavy">
+		<div class="row">
+			<div class="col-lg-12 heading bg-dark text-light">
+				<h1>PHP Homework 1</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 padded">
+				<div class="alert alert-info">
+					<strong>
+						For this assignment, you will complete some basic PHP tasks to start to get the feel for the language.
+					</strong>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<h4>1. Does Your Wampserver Work?</h4>
+						<div class="alert alert-info">
+							<strong>Part 1:</strong> Make sure you have downloaded Wampserver if you are on a windows machine. 
+							If you are running some form of linux, get XAMPP: <a href="https://www.apachefriends.org/index.html" target="_blank">https://www.apachefriends.org/index.html</a>
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 2:</strong> Get refreshed on WAMPserver (or XAMPP) a bit. This video shows the 
+							common mechanics of wampserver: <a href="https://www.youtube.com/watch?v=Qku0ppy-lUU" target="_blank">https://www.youtube.com/watch?v=Qku0ppy-lUU</a>
+							or just check out this site: <a href="https://www.homeandlearn.co.uk/php/php1p3.html" target="_blank">https://www.homeandlearn.co.uk/php/php1p3.html</a>
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 3:</strong> Create a new directory in the www folder of your wampserver called "Homework."
+							The www folder of your wampserver should be C:\wamp64\www or C:\wamp32\www. You can find this easy
+							by running WAMPserver, clicking on its W icon on the bottom right of your screen, and clicking the 
+							"www directory" piece. 
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 4:</strong> Copy the file that came with this homework, index.php, and paste it into 
+							the new folder you created in the www directory of WAMPserver. 
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 5:</strong> Make sure that WAMPserver is on by checking to see if the W icon is yellow or green.
+							If it is red, click the icon. If there is no icon at the bottom right of your screen, check in the up arrow to 
+							see if it is hiding. If it is not there, then you need to find WAMPserver and run it. Chances are
+							when you installed wampserver, it created a desktop icon that you can use as a shortcut. Try that.
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 6:</strong> With Wampserver running, open a browser, and put 
+							http://localhost/Homework/ in the URL bar and enter. You should see "I WORKED!!!!!!". 
+						</div>
+						
+						<h5>References for Help</h5>
+						<table class="table table-light table-striped">
+							<thead>
+								<tr>
+									<th>Topic</th>
+									<th>Reference</th>
+								</tr>
+							</thead>
+							<tbody>
+									<tr>
+										<td>Some basic wampserver</td>
+										<td>
+											<a href="https://www.youtube.com/watch?v=Qku0ppy-lUU"
+												target="_blank">https://www.youtube.com/watch?v=Qku0ppy-lUU</a>
+										</td>
+									</tr>
+									<tr>
+										<td>Some basic wampserver site</td>
+										<td>
+											<a href="https://www.homeandlearn.co.uk/php/php1p3.html"
+												target="_blank">https://www.homeandlearn.co.uk/php/php1p3.html</a>
+										</td>
+									</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<br />
+				<div class="card">
+					<div class="card-body">
+						<h4>2. Import header and footer files</h4>
+						<div class="alert alert-info">
+							<strong>Part 1:</strong> Make sure to familiarize yourself with PHP's include function:
+							<a href="https://www.w3schools.com/php/php_includes.asp"
+												target="_blank">https://www.w3schools.com/php/php_includes.asp</a>
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 2:</strong> Copy the file that came with this homework, header.php, and paste it into 
+							the Homework folder you created in the www directory of WAMPserver. 
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 3:</strong> Copy the file that came with this homework, footer.php, and paste it into 
+							the Homework folder you created in the www directory of WAMPserver. 
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 4:</strong> From the first homework chunk, you should have pasted an index.php file in the 
+							Homework directory. This file is the file I am referring to when I say edit the index.php file.
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 5:</strong> Edit the index.php file to include the header.php file using include("header.php");
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 6:</strong> Edit the index.php file to include the footer.php file using include again but with the footer file's
+							name given to the function.
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 7:</strong> At this point, all of the html in index.php should and can be removed, since header includes everything
+							needed for the basic html stuffs and footer closes out the body and html tags. 
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 8:</strong> At this point, all of the html in index.php should and can be removed, since header includes everything
+							needed for the basic html stuffs and footer closes out the body and html tags. 
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 9:</strong> Create a new file in the Homework directory called "contact.php"
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 10:</strong> Copy the code in index.php and paste it into contact.php.
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 11:</strong> Make the echo that is saying "I WORKED!!!!!!" write something that would make see for
+							the index page in index.php like "Welcome to my website!" and then make the same echo in the contact.php file
+							write something that makes since for a contact page like "Please contact the law offices of ponies and candy 
+							for further information."
+						</div>
+						<div class="alert alert-warning">
+							<strong>Note:</strong> before php (and javascript and other languages can do this include mechanic as well),
+							this situation would be handled by copying and pasting the header and footer html code into 
+							every page file the website had i.e. the home, contact, about us, store, etc. Whenever a change was made to the 
+							header portion like say the navbar got a new link, that change needed to be made in each of the 
+							page files, which is very tedious. We can just edit the one header.php file!
+						</div>
+						<div class="alert alert-info">
+							<strong>Part 12:</strong> Make the navbar link between the index.php and the contact.php page by modifying 
+							the nav bar items. Make one of the items "Home" and set its href to index.php. Make another one "Contact Us"
+							and set its href to contact.php. 
+						</div>
+						<h5>References for Help</h5>
+						<table class="table table-light table-striped">
+							<thead>
+								<tr>
+									<th>Topic</th>
+									<th>Reference</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>PHP Include</td>
+									<td>
+										<a href="https://www.w3schools.com/php/php_includes.asp"
+											target="_blank">https://www.w3schools.com/php/php_includes.asp</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<br />
+				<div class="alert alert-success">
+					<strong>All Done!</strong> Make sure to either Zip up all your homework files and
+					email it to Sean at arrayaway@gmail.com or send your code to Sean on Slack at
+					<a href="https://array-away.slack.com" target="_blank">https://array-away.slack.com</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 padded">
+			</div>
+		</div>
+	</div>
+	<script src="part2scripts.js"></script> 
+</body>
+
+</html>
